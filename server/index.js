@@ -1,16 +1,19 @@
 import express from 'express';
 import { MongoClient, ObjectId } from 'mongodb';
+import dotenv from 'dotenv';
 
-
+dotenv.config();
 const app = express();
 
-const PORT = 6789;
-const uri = "mongodb+srv://eiveth:esl_learning@mereads.mbjvt.mongodb.net/?retryWrites=true&w=majority&appName=MeReads";
-
+// const PORT = 6789;
+// const uri = "mongodb+srv://eiveth:esl_learning@mereads.mbjvt.mongodb.net/?retryWrites=true&w=majority&appName=MeReads";
+const PORT = process.env.PORT || 3000;
+const uri = process.env.MONGO_URI;
 const client = new MongoClient(uri);
 let db = undefined;
 
-app.use(express.json());
+// app.use(express.json());
+app.use('/', express.static('dist'));
 
 function fetchDB() {
     db = client.db("MeReads");
