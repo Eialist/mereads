@@ -12,8 +12,8 @@ const uri = process.env.MONGO_URI;
 const client = new MongoClient(uri);
 let db = undefined;
 
-// app.use(express.json());
-app.use('/', express.static('dist'));
+app.use(express.json());
+// app.use('/', express.static('dist'));
 
 function fetchDB() {
     db = client.db("MeReads");
