@@ -121,6 +121,10 @@ app.patch("/api/articles/deleteLike", async (req, res) => {
     }
 })
 
+app.get('/*', (req, res) => {
+    res.sendFile('index.html', { root: 'dist' });
+})
+
 async function connectToDb() {
     try {
         await client.connect()
