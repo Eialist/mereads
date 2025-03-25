@@ -1,0 +1,51 @@
+.fp-article-container {
+    width: 100vw; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column;
+    gap: 1.5em; 
+    align-items: center;
+}
+
+.fp-art-img {
+   height: 130px; 
+   width: 180px;
+   object-fit: cover; 
+   overflow: hidden;
+}
+
+.fp-article-card {
+    background-color: #F9F9F7;
+    border-radius: 24px;
+    overflow: hidden;
+    height: 130px; 
+    width: 361px; 
+    display: flex; 
+    flex-direction: row;
+}
+
+.fp-header {  
+    width: 100vw; 
+    height: 60px; 
+    border-radius: 0 0 24px 24px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fp-small-logo {
+    height: 64px;
+    width: 78px; 
+    padding: 0; 
+}
+
+.fp-header-text {
+    font-family: MoveSansBold, sans-serif;
+    margin: 0; 
+    padding: 0; 
+}
+
+.fact-header {
+    background-color: #138ACE !important;
+}

@@ -1,0 +1,53 @@
+.s-article-img {
+    width: 100%; 
+    border-radius: 40px 40px 0 0 ;
+    z-index: -40;
+    height: auto; 
+}
+
+.s-article-title {
+    margin: 8px 0px; 
+}
+
+.fp-header {
+    z-index: 1000 !important;
+    position: relative;
+}
+
+.article-box {
+    min-width: 361px; 
+    max-width: 90%;
+    border-radius: 40px 40px 40px 40px;
+    margin-top: 2em; 
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.s-logo {
+    width: 55%;
+    margin: 0; 
+    padding-left: 2px; 
+}
+
+.article-body-text {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 16px; 
+  }
+
+.like-logo {
+   position: absolute; 
+   right: 1em; 
+   bottom: -2.4em; 
+   border-radius: 500px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.article-img-container {
+    position: relative; 
+    display: inline-block; 
+    height: auto; 
+    width: 100%;
+}

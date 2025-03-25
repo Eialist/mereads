@@ -1,0 +1,23 @@
+.prc-header-color {
+    color: #036147;
+}
+
+.prc-divider-color {
+    background-color: #b6b414;
+}
+
+.prc-article-f-card {
+    background-color: #F9F9F7;
+    border-radius: 24px;
+    overflow: hidden;
+    height: 260px; 
+    width: 361px; 
+    display: flex;
+    flex-direction: row;
+}
+
+.prc-article-f-card .prc-art-img {
+    height: 260px;
+    min-width: 180px; 
+    object-fit: cover;
+}

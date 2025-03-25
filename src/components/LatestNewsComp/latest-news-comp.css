@@ -1,0 +1,61 @@
+@font-face {
+    font-family: MoveSansBold;
+    src: url("../../assets/fonts/MoveSans-Bold.otf")
+}
+
+.lnc-article-container {
+    width: 95vw !important;
+    height: 230px;
+    display: flex; 
+    gap: 1.5em; 
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 24px 20px;
+}
+
+.lnc-art-img {
+    width: 140px; 
+    height: 100px; 
+    object-fit: cover; 
+    overflow: hidden;
+    border-radius: 24px 24px 0 0 ;
+}
+
+.lnc-article-card {
+    max-width: 140px;
+    min-width: 140px; 
+    max-height: 200px; 
+    background-color: #F9F9F7;
+    border-radius: 24px;
+}
+
+.lnc-article-card:last-child {
+    margin-right: 1em !important; 
+}
+
+.lnc-text { 
+    margin: 0px 8px 0px 8px;
+    font-size: 16px;
+    color: #381300;
+    overflow: hidden;
+}
+
+.lnc-header-text {
+    width: 100vw; 
+    font-family: MoveSansBold;
+    margin: 30px 20px 20px 20px;
+    color: #DF5F20;
+    overflow: hidden;
+}
+
+.lnc-inter-container {
+    display: flex; 
+    gap: 1em; 
+    padding: 0px 10px; 
+    overflow: hidden;
+}
+
+.lnc-inter-container img {
+    margin-right: 2px;
+    overflow: hidden;
+}

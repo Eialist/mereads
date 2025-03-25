@@ -1,0 +1,48 @@
+.nav-btn-container {
+    height: 64px; 
+    width: 66px; 
+    border-radius: 500px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 4px; 
+    flex-direction: column;
+    cursor: pointer;
+    padding-top: 1px; 
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex; 
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1.5em; 
+}
+
+
+.games-btn {
+    background-color: #F8E2F1;
+    color: #DF5F20;
+}
+
+.fun-btn {
+    background-color: #036048;
+    color: #D0CF3F;
+}
+
+.fact-btn {
+    background-color: #138ACE;
+    color: #CDE8F4;
+}
+
+.animals-btn {
+    background-color: #DF5F20;
+    color: #fff; 
+}
+
+.nav-btn-text {
+    padding: 0; 
+    margin: 0; 
+    font-size: 11px;
+    font-weight: 600;
+}
