@@ -11,7 +11,7 @@ export const FunComp = () => {
   console.log(funArticles);
 
   return (
-    <>
+    <div className="fun-container">
       <div className="header-container">
         <Link to={"articles/fun"}>
           <h1 className="header-text fun-header-color">Fun</h1>
@@ -55,6 +55,6 @@ export const FunComp = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };

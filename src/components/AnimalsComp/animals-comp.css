@@ -5,3 +5,9 @@
 .ac-divider-color {
     background-color: #E8C5DD;
 }
+
+@media screen and (min-width: 900px) {
+    .ac-container {
+       display: none; 
+    }
+}

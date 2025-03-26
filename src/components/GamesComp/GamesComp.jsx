@@ -10,7 +10,7 @@ export const GamesComp = () => {
   useGet("/api/articles/find?genre=games&limit=2", setGamesArticles);
   console.log(gamesArticles);
   return (
-    <>
+    <div className="gc-container">
       <div className="header-container">
         <Link to={"articles/games"}>
           <h1 className="header-text gc-header-color">Games</h1>
@@ -54,6 +54,6 @@ export const GamesComp = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };

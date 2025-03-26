@@ -5,3 +5,9 @@
 .fc-divider-color {
     background-color: #A5C5D4;
 }
+
+@media screen and (min-width: 900px) {
+    .fc-container {
+       display: none; 
+    }
+}

@@ -11,7 +11,7 @@ export const FactsComp = () => {
   console.log(gamesArticles);
 
   return (
-    <>
+    <div className="fc-container">
       <div className="header-container">
         <Link to={"articles/facts"}>
           <h1 className="header-text fc-header-color">Facts</h1>
@@ -55,6 +55,6 @@ export const FactsComp = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };

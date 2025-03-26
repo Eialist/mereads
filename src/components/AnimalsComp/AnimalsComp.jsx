@@ -11,7 +11,7 @@ export const AnimalsComp = () => {
   console.log(animalArticles);
 
   return (
-    <>
+    <div className="ac-container">
       <div className="header-container">
         <Link to={"/articles/animals"}>
           <h1 className="header-text ac-header-color">Animals</h1>
@@ -55,6 +55,6 @@ export const AnimalsComp = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };

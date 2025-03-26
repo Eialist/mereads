@@ -34,14 +34,20 @@
     display: flex; 
     flex-direction: column;
     gap: 1.5em; 
-    align-items: center; 
+    align-items: center;
+}
+
+.article-div {
+    display: flex; 
+    justify-content: center;
+    width: 100vw; 
 }
 
 .article-img {
-   min-height: 130px; 
-   max-height: 130px; 
-   min-width: 180px;
-   max-width: 180px; 
+   min-height: 100%; 
+   max-height: 100%; 
+   min-width: 50%;
+   max-width: 50%; 
    object-fit: cover; 
    overflow: hidden;
 }
@@ -51,7 +57,7 @@
     border-radius: 24px;
     overflow: hidden;
     min-height: 130px; 
-    width: 361px; 
+    width: 90%; 
     display: flex; 
     flex-direction: row;
 }

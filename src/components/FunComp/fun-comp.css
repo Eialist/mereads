@@ -5,3 +5,9 @@
 .fun-divider-color {
     background-color: #036048;
 }
+
+@media screen and (min-width: 900px) {
+    .fun-container {
+       display: none; 
+    }
+}

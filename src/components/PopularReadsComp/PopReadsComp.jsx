@@ -10,14 +10,14 @@ export const PopReadsComp = () => {
   useGet("/api/articles/popular", setPopArticles);
   console.log(popArticles);
   return (
-    <>
+    <div className="prc-container">
       <div className="header-container">
         <h1 className="header-text prc-header-color">Popular Reads</h1>
         <div className="comp-divider prc-divider-color"></div>
       </div>
       <div className="article-container">
         {popArticles.map((article, index) => (
-          <div key={article._id + index}>
+          <div key={article._id + index} className="article-div">
             {index === 0 ? (
               <div className="prc-article-f-card">
                 <img
@@ -47,7 +47,9 @@ export const PopReadsComp = () => {
                       {article.likes}
                     </span>
                   </div>
-                  <p className="multi-line-ellipsis">{article.text}</p>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: article.text }}
+                    className="multi-line-ellipsis"></p>
                   <Link to={`/articles/${article.slug}`}>
                     <p className="read-more-links">Read more..</p>
                   </Link>
@@ -91,6 +93,6 @@ export const PopReadsComp = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
