@@ -38,7 +38,7 @@ export const FrontPage = () => {
               <button className="fp-tc-button fact-btn">
                 <div className="fp-btn-div">
                   <img src={fact} alt="" height="20px" />
-                  <p style={{ color: "#CDE8F4" }}>Fact</p>
+                  <p style={{ color: "#CDE8F4" }}>Facts</p>
                 </div>
               </button>
             </Link>
