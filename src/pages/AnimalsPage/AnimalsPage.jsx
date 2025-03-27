@@ -26,7 +26,7 @@ export const AnimalsPage = () => {
         <h1 className="header-text ac-header-color">Animals</h1>
         <div className="comp-divider ac-divider-color"></div>
       </div>
-      <div className="article-container article-container-page">
+      <div className="article-container genre-container">
         <input
           type="text"
           onChange={(e) => setQuery(e.target.value)}

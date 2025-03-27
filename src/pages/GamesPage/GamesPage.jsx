@@ -25,7 +25,7 @@ export const GamesPage = () => {
         <h1 className="header-text games-header-color">Games</h1>
         <div className="comp-divider games-divider-color"></div>
       </div>
-      <div className="article-container article-container-page">
+      <div className="article-container genre-container">
         <input
           type="text"
           onChange={(e) => setQuery(e.target.value)}

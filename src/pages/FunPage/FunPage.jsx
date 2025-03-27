@@ -26,7 +26,7 @@ export const FunPage = () => {
         <h1 className="header-text fun-header-color">Fun</h1>
         <div className="comp-divider fun-divider-color"></div>
       </div>
-      <div className="article-container article-container-page">
+      <div className="article-container genre-container">
         <input
           type="text"
           onChange={(e) => setQuery(e.target.value)}
