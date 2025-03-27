@@ -21,7 +21,12 @@ export const FunPage = () => {
         <div className="comp-divider fun-divider-color"></div>
       </div>
       <div className="article-container article-container-page">
-        <input type="text" onChange={(e) => setQuery(e.target.value)} />
+        <input
+          type="text"
+          onChange={(e) => setQuery(e.target.value)}
+          className="search-input"
+          placeholder="Search..."
+        />
         {funArticles
           .filter((article) => {
             return (

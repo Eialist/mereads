@@ -30,6 +30,7 @@
 
 .article-container {
     width: 100vw; 
+    min-height: 100vh;
     overflow: hidden; 
     display: flex; 
     flex-direction: column;
@@ -86,3 +87,14 @@
     margin: 20px 20px 20px 20px;
 }
 
+.search-input {
+  background-image: url('/src/assets/Logos/research.png'); 
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-left: 35px; 
+}
+
+.search-input:focus::placeholder {
+    color: transparent;
+}
