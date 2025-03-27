@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import views from "../../assets/Logos/views-logo.png";
 import likes from "../../assets/Logos/likes-logo.png";
+import logo from "../../assets/Logos/mr-blue.png";
 import { NavComp } from "../../components/NavComp/NavComp";
 
 export const FactPage = () => {
@@ -13,6 +14,11 @@ export const FactPage = () => {
 
   return (
     <>
+      <Link to={"/"}>
+        <div className="page-logo">
+          <img src={logo} alt="" />
+        </div>
+      </Link>
       <NavComp />
       <div className="header-container">
         <h1 className="header-text fc-header-color">Facts</h1>
