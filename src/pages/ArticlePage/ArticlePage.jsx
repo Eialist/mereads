@@ -16,11 +16,19 @@ export const ArticlePage = () => {
   const [article, setArticle] = useState({});
   const [likes, setLikes] = useState();
   const [isLiked, setIsLiked] = useState(false);
+  const [selectedAnswer, setSelectedAnswer] = useState({});
   useGet(`/api/articles/${slug}`, (data) => {
     setArticle(data), setLikes(data.likes);
   });
 
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
+
+  const handleAnswerClick = (selected, correct, questionIndex) => {
+    setSelectedAnswer((prev) => ({
+      ...prev,
+      [questionIndex]: selected === correct,
+    }));
+  };
 
   useEffect(() => {
     const lastVisit = localStorage.getItem(`article_${slug}_lastVisit`);
@@ -47,6 +55,8 @@ export const ArticlePage = () => {
   } else if (article.genre === "games") {
     logoSrc = pLogo;
   }
+
+  const colors = ["orange-bg", "blue-bg", "green-bg", "brown-bg"];
 
   let articleId = article._id;
   const handleLikeToggle = async () => {
@@ -141,10 +151,28 @@ export const ArticlePage = () => {
                     <strong>{question.question}</strong>
                   </div>
                   {question.options.map((answer, index) => (
-                    <div key={answer + index}>
-                      {index + 1}. {answer}
+                    <div
+                      key={answer + index}
+                      className={`article-answers ${
+                        colors[index % colors.length]
+                      }`}
+                      onClick={() =>
+                        handleAnswerClick(
+                          answer,
+                          question.correctAnswer,
+                          questionIndex
+                        )
+                      }>
+                      {answer}
                     </div>
                   ))}
+                  {selectedAnswer[questionIndex] !== undefined && (
+                    <p>
+                      {selectedAnswer[questionIndex]
+                        ? "✅ Correct!"
+                        : "❌ Incorrect"}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>

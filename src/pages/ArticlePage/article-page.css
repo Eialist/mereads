@@ -46,9 +46,29 @@
    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
+.like-logo:active {
+    transform: scale(0.9);
+}
+
 .article-img-container {
     position: relative; 
     display: inline-block; 
     height: auto; 
     width: 100%;
 }
+
+.article-answers {
+    padding: 8px 16px;
+    background-color: #138ACE;
+    color: white;
+    margin: .5em;
+    border-radius: 50px;
+    /* text-align: center; */
+}
+
+.orange-bg { background-color: #DF5F20; }
+.blue-bg { background-color: #138ACE; }
+.green-bg { background-color: #036048; }
+.brown-bg { background-color: #381300; }
+
+.bg-green-500 { background-color:chartreuse}

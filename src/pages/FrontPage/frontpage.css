@@ -36,7 +36,8 @@
 }
 
 .fp-container {
-    width: 100vw; 
+    min-width: 100vw !important; 
+    max-width: 100vw !important;
     overflow: hidden;
 }
 
