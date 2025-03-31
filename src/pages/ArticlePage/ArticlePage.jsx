@@ -141,7 +141,7 @@ export const ArticlePage = () => {
           />
           {article.questions ? (
             <div>
-              <h3>Questions on the text</h3>
+              <h3>Text Quiz</h3>
               {article.questions.map((question, questionIndex) => (
                 <div
                   key={questionIndex}

@@ -12,7 +12,7 @@ import { FactsComp } from "../../components/FactsComp/FactsComp.jsx";
 import { Link } from "react-router-dom";
 import { FunComp } from "../../components/FunComp/FunComp.jsx";
 import { AnimalsComp } from "../../components/AnimalsComp/AnimalsComp.jsx";
-// import { FooterComp } from "../../components/FooterComp/FooterComp.jsx";
+import { FooterComp } from "../../components/FooterComp/FooterComp.jsx";
 
 export const FrontPage = () => {
   let gamesLink = "games";
@@ -68,7 +68,7 @@ export const FrontPage = () => {
         <FactsComp />
         <FunComp />
         <AnimalsComp />
-        {/* <FooterComp /> */}
+        <FooterComp />
       </div>
     </>
   );

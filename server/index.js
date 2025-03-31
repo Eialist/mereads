@@ -1,6 +1,7 @@
 import express from 'express';
 import { MongoClient, ObjectId } from 'mongodb';
 import dotenv from 'dotenv';
+import getTime from './utils/setDate.js';
 
 dotenv.config();
 const app = express();
@@ -105,6 +106,28 @@ app.post("/api/articles/addview", async (req, res) => {
     catch (error) {
         return res.status(403).send({ error: error.message })
     }
+})
+
+app.post("/api/contact/send", async (req, res) => {
+    const { topic, message, email } = req.body;
+
+    const addCommunication = (req, res) => {
+        console.log(req.body);
+
+        if (topic == undefined || message == undefined || email == undefined) {
+            return res.status(403).send({ error: "One or more of the fields are empty." })
+        }
+        try {
+            const communication = { topic: topic, message: message, email: email, isRead: false, createdDate: getTime() };
+            console.log(communication)
+            fetchDB().collection("communications").insertOne(communication, { upsert: true })
+            return res.status(200).send({ msg: "Message sent" })
+        }
+        catch (error) {
+            res.status(403).send({ error: error.message })
+        }
+    }
+    addCommunication(req, res);
 })
 
 app.patch("/api/articles/deleteLike", async (req, res) => {

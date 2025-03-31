@@ -6,6 +6,9 @@ import { FunPage } from "./pages/FunPage/FunPage";
 import { FactPage } from "./pages/FactPage/FactPage";
 import { AnimalsPage } from "./pages/AnimalsPage/AnimalsPage";
 import { GamesPage } from "./pages/GamesPage/GamesPage";
+import { ContactPage } from "./pages/ContactPage/ContactPage";
+import { AboutPage } from "./pages/AboutPage/AboutPage";
+import { CreditPage } from "./pages/CreditsPage/CreditPage";
 // import { GenrePage } from "./pages/GenrePage/GenrePage";
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
           <Route path="/articles/facts" element={<FactPage />} />
           <Route path="/articles/animals" element={<AnimalsPage />} />
           <Route path="/articles/games" element={<GamesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/about-mereads" element={<AboutPage />} />
+          <Route path="/credits" element={<CreditPage />} />
         </Routes>
       </Router>
     </>
